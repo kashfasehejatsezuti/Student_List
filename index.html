@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>
+
+       Student List
+        
+    </title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+         <tr>
+             <td>
+                 <form autocomplete="off" onsubmit="onFormSubmit()">
+                     <div>
+                         <lable for ="studentid">Student ID :</lable>
+                         <br>
+                         <input types="text" name ="studentid" id="studentid">
+                     </div>
+                     <div>
+                        <lable for ="studentname">Student Name :</lable><br>
+                         <input types="text" name ="studentname" id="studentname"> 
+                     </div>
+                     <div>
+                        <lable for ="studentdep">Department :</lable><br>
+                         <input types="text" name ="studentdep" id="studentdep"> 
+                     </div>
+                     <div>
+                        <lable for ="totalscore">Total Score :</lable>
+                        <br>
+                         <input types="number" name ="totalscore" id="totalscore"> 
+                     </div>
+                     <div>
+                        <lable for ="class">Class :</lable><br>
+                         <input types="number" name ="class" id="class"> <br><br>
+                     </div>
+                     <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                     </div>
+                        
+                 </form>
+                 <td>
+                     <table class="list" id="store_list">
+                         <thread>
+                             <tr>
+                                 <th>Student ID</th>
+                                 <th>Student Name</th>
+                                 <th>Department</th>
+                                 <th>Tortal Score</th>
+                                 <th>Class</th>
+                             </tr>
+                         </thread>
+                         <tbody>
+
+                         </tbody>
+                     </table>
+                 </td>
+             </td>
+         </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
